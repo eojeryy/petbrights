@@ -677,7 +677,7 @@
                                 line_style
                              </span>
                              <div class="ms-3">
-                                <a href="https://templates.iqonic.design/socialv/bs5/html/dist/app/profile.html" class="mb-0 h6">
+                                <a href="#" class="mb-0 h6">
                                    My Profile
                                 </a>
                              </div>
@@ -687,7 +687,7 @@
                                 edit_note
                              </span>
                              <div class="ms-3">
-                                <a href="https://templates.iqonic.design/socialv/bs5/html/dist/app/profile-edit.html" class="mb-0 h6">
+                                <a href="#" class="mb-0 h6">
                                    Edit Profile
                                 </a>
                              </div>
@@ -697,7 +697,7 @@
                                 manage_accounts
                              </span>
                              <div class="ms-3">
-                                <a href="https://templates.iqonic.design/socialv/bs5/html/dist/app/account-setting.html" class="mb-0 h6">
+                                <a href="#" class="mb-0 h6">
                                    Account settings
                                 </a>
                              </div>
@@ -707,7 +707,7 @@
                                 lock
                              </span>
                              <div class="ms-3">
-                                <a href="https://templates.iqonic.design/socialv/bs5/html/dist/app/privacy-setting.html" class="mb-0 h6">
+                                <a href="#" class="mb-0 h6">
                                    Privacy Settings
                                 </a>
                              </div>
@@ -717,7 +717,7 @@
                                 login
                              </span>
                              <div class="ms-3">
-                                <a href="sign-in.html" class="mb-0 h6">
+                                <a href="#" class="mb-0 h6">
                                    Sign out
                                 </a>
                              </div>
