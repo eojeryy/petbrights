@@ -1,0 +1,42 @@
+.petbright_circle {
+    border-radius: 50%;
+
+}
+
+.petbmlogo {
+    width: 30px;
+    height: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
+
+}
+
+.mb-100-text {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+            
+
+    .petbright_circle {
+    width: 35%;
+    height: 35%;
+    
+    }
+
+    .mb-100-text {
+        color: white;
+        font-weight: 800;
+        font-size: 14px;
+    }
+
+    .petbmlogo {
+        width: 25px;
+        height: 25px;
+        margin-right: 5%;
+        margin-left: 5%;
+    
+    }
+
+    
+}
