@@ -28,3 +28,7 @@ Route::get('/dashboard', function () {
 Route::get('/signup', function () {
     return view('signup');
 });
+
+Route::get('/check', function () {
+    return view('check');
+});

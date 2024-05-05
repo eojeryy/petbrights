@@ -1,5 +1,3 @@
-import './bootstrap';
-
 /*
 Template: SocialV - Responsive Bootstrap 5 Admin Dashboard Template
 Author: iqonicthemes.in

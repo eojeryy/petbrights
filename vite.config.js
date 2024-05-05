@@ -5,6 +5,13 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
+                'resources/css/libs.min.css',
+                'resources/css/socialv006a.css',
+                'resources/vendor/flatpickr/dist/flatpickr.min.css',
+                'resources/vendor/sweetalert2/dist/sweetalert2.min.css',
+                'resources/vendor/vanillajs-datepicker/dist/css/datepicker.min.css',
+                'resources/css/customizer.css',
+                'resources/css/app.css',
                 'resources/js/libs.min.js',
                 'resources/vendor/lodash/lodash.min.js',
                 'resources/js/setting/utility.js',
@@ -22,14 +29,7 @@ export default defineConfig({
                 'resources/js/fslightbox.js',
                 'resources/vendor/vanillajs-datepicker/dist/js/datepicker.min.js',
                 'resources/js/lottie.js',
-                'resources/js/select2.js',
-                'resources/css/libs.min.css',
-                'resources/css/socialv006a.css',
-                'resources/vendor/flatpickr/dist/flatpickr.min.css',
-                'resources/vendor/sweetalert2/dist/sweetalert2.min.css',
-                'resources/vendor/vanillajs-datepicker/dist/css/datepicker.min.css',
-                'resources/css/customizer.css',
-                'resources/css/app.css'
+                'resources/js/select2.js'
             ],
             refresh: true,
         }),

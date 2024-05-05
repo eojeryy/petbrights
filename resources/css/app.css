@@ -1,5 +1,12 @@
+.desk {
+    display: block;
+}
+.mobile {
+    display: none;
+}
 .petbright_circle {
     border-radius: 50%;
+    opacity: 0.8;
 
 }
 
@@ -8,6 +15,7 @@
     height: 30px;
     margin-right: 5%;
     margin-left: 5%;
+    
 
 }
 
@@ -15,14 +23,78 @@
     color: white;
 }
 
+.signtext {
+    color: #306d99;
+    font-size: 12px;
+}
+
+.carouseltext {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
 @media screen and (max-width: 768px) {
             
+    .desk {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+
+    .cmd {
+        width: 45%;
+        height: 45%;
+        margin: auto;
+        padding: auto;
+    }
+
+    #container-inside {
+        position: relative;
+        height: 50vh;
+        width: 100vw;
+        margin: 0px auto;
+        padding: 0px auto;
+        overflow: hidden;
+      }
+
+      .sign-in-page {
+        overflow-y: scroll;
+        height: 100vh;
+      }
+
+      .sign-in-detail {
+        color: #fff;
+        padding: 6.25rem;
+        height: 40vh;
+      }
+
+      .sign-in-page .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 40vh;
+      }
+
+    .ptsm {
+        
+        margin-top: -15%;
+
+      }
+
 
     .petbright_circle {
-    width: 35%;
-    height: 35%;
-    
+         width: 45%;
+         height: 45%;
+         opacity: 1.0;
+
+        
     }
+
+    
 
     .mb-100-text {
         color: white;

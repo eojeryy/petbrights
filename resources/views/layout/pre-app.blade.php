@@ -2,6 +2,13 @@
 <html lang="en" class="theme-fs-md">
   
 @vite([
+        'resources/css/libs.min.css',
+        'resources/css/socialv006a.css',
+        'resources/vendor/flatpickr/dist/flatpickr.min.css',
+        'resources/vendor/sweetalert2/dist/sweetalert2.min.css',
+        'resources/vendor/vanillajs-datepicker/dist/css/datepicker.min.css',
+        'resources/css/customizer.css',
+        'resources/css/app.css',
         'resources/js/libs.min.js',
         'resources/vendor/lodash/lodash.min.js',
         'resources/js/setting/utility.js',
@@ -19,14 +26,8 @@
         'resources/js/fslightbox.js',
         'resources/vendor/vanillajs-datepicker/dist/js/datepicker.min.js',
         'resources/js/lottie.js',
-        'resources/js/select2.js',
-        'resources/css/libs.min.css',
-        'resources/css/socialv006a.css',
-        'resources/vendor/flatpickr/dist/flatpickr.min.css',
-        'resources/vendor/sweetalert2/dist/sweetalert2.min.css',
-        'resources/vendor/vanillajs-datepicker/dist/css/datepicker.min.css',
-        'resources/css/customizer.css',
-        'resources/css/app.css'
+        'resources/js/select2.js'
+        
          ])
 
   <link rel="stylesheet" href="{{ url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200') }}" />
