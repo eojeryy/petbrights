@@ -2,6 +2,8 @@
 <html lang="en" class="theme-fs-md">
   
 @vite([
+        'resources/sass/app.scss',
+        'resources/js/app.js',
         'resources/css/libs.min.css',
         'resources/css/socialv006a.css',
         'resources/vendor/flatpickr/dist/flatpickr.min.css',

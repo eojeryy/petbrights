@@ -57,25 +57,53 @@
                     <div class="sign-in-from">
                         <h1 class="mb-0">Sign Up</h1>
                         <p class="signtext">Enter your email address and password to sign up.</p>
-                        <form class="mt-4" action="{{ url('dashboard') }}">
+                        <form class="mt-4" action="{{ route('register') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+
                             <div class="form-group">
-                                <label class="form-label" for="exampleInputEmail1">Your Full Name</label>
-                                <input type="email" class="form-control mb-0" id="exampleInputEmail1" placeholder="Your Full Name">
+                                <label class="form-label" for="name">{{ __('Full Name') }}</label>
+                                <input name="name" type="text" class="form-control mb-0 @error('name') is-invalid @enderror" id="name" placeholder="Full Name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            
                             </div>
+
                             <div class="form-group">
-                                <label class="form-label" for="exampleInputEmail2">Email address</label>
-                                <input type="email" class="form-control mb-0" id="exampleInputEmail2" placeholder="Enter email">
+                                <label class="form-label" for="email">{{ __('Email Address') }}</label>
+                                <input type="email" class="form-control mb-0 @error('email') is-invalid @enderror" id="email" placeholder="Email Address" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            
                             </div>
+
                             <div class="form-group">
-                                <label class="form-label" for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control mb-0" id="exampleInputPassword1" placeholder="Password">
+                                <label class="form-label" for="password">Password</label>
+                                <input name="password" type="password" class="form-control mb-0 @error('password') is-invalid @enderror" id="password" placeholder="Password" required autocomplete="new-password">
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            
                             </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="password-confirm">{{ __('Confirm Password') }}</label>
+                                <input name="password_confirmation" type="password" class="form-control mb-0" id="password-confirm" placeholder="Confirm Password" required autocomplete="new-password">
+                            </div>
+
                             <div class="d-inline-block w-100">
                                 <div class="form-check d-inline-block mt-2 pt-1">
                                     <input type="checkbox" class="form-check-input" id="customCheck1">
                                     <label class="form-check-label" for="customCheck1">I accept <a href="#">Terms and Conditions</a></label>
                                 </div>
-                                <button type="submit" class="btn btn-primary float-end">Sign Up</button>
+                                <button type="submit" class="btn btn-primary float-end">{{ __('Sign Up') }}</button>
                             </div>
                             <div class="sign-info">
                                 <span class="dark-color d-inline-block line-height-2">Already Have Account ? <a href="{{ url('login') }}">Log In</a></span>

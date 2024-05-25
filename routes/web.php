@@ -17,18 +17,24 @@ Route::get('/', function () {
     return view('signup');
 });
 
-Route::get('/signin', function () {
-    return view('signin');
+Route::get('/login', function () {
+    return view('auth.login');
 });
 
-Route::get('/dashboard', function () {
+/*Route::get('/dashboard', function () {
     return view('index');
-});
+});*/
 
-Route::get('/signup', function () {
-    return view('signup');
+Route::get('/register', function () {
+    return view('auth.register');
 });
 
 Route::get('/check', function () {
     return view('check');
 });
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+
+Auth::routes();
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
